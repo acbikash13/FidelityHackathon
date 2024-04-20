@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    axios.get('/api/postTheUserMaterials')
+        .then(function (response) {
+            // Handle the response data here
+            console.log(response.data);
+        })
+        .catch(function (error) {
+            // Handle any errors that occurred during the request
+            console.error(error);
+        });
+</script>
+</html>
